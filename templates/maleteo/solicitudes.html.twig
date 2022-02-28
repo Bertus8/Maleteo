@@ -1,0 +1,23 @@
+{% extends 'maleteo/home.html.twig' %}
+{% block body %}
+    <h2>Listado de Solicitudes</h2>
+    <div class="row row-cols-1 row-cols-md-2">
+        {% for message in app.flashes('exito') %}
+            <p>{{ message }}</p>
+        {% endfor %}
+    
+            <div class="col mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text"></p>
+                        <a href="" class="btn btn-primary">Más Info</a>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    <div id="my-album"></div>
+{% endblock %}
+{% block title %}Listado de Solicitudes{% endblock %}
